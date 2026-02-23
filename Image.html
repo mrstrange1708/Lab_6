@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - GitHub Workflows</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .welcome-text {
+            color: #667eea;
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .content {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .features h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .features li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .github-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .github-link a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .github-link a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀 Lab 6</h1>
+        <p class="welcome-text">Welcome to GitHub Workflows</p>
+
+        <div class="content">
+            <p>
+                This lab explores the powerful automation capabilities of GitHub Actions and Workflows.
+                Learn how to automate your software development lifecycle with continuous integration,
+                continuous deployment, and custom automation workflows.
+            </p>
+        </div>
+
+        <div class="features">
+            <h2>What You'll Learn:</h2>
+            <ul>
+                <li>Creating and configuring GitHub Actions workflows</li>
+                <li>Automating testing and deployment processes</li>
+                <li>Understanding YAML configuration for workflows</li>
+                <li>Working with triggers, jobs, and steps</li>
+                <li>Implementing CI/CD pipelines</li>
+                <li>Using GitHub Actions marketplace</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <p>
+                <strong>GitHub Actions</strong> makes it easy to automate all your software workflows with
+                world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews,
+                branch management, and issue triaging work the way you want.
+            </p>
+        </div>
+
+        <div class="github-link">
+            <a href="https://github.com/mrstrange1708/Lab_6" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="footer">
+            <p>Lab 6 - GitHub Workflows | © 2026</p>
+        </div>
+    </div>
+</body>
+
+</html>
